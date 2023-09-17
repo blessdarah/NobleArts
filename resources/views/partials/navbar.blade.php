@@ -27,8 +27,8 @@
         <div class="container">
             <div class="mobile-responsive-menu">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/white-logo.png" alt="logo">
+                    <a href="{{ route('pages.welcome') }}">
+                        <img src="{{ asset('assets/images/white-logo.png') }}" alt="logo">
                     </a>
                 </div>
             </div>
@@ -38,134 +38,23 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/white-logo.png" alt="logo">
+                    <img src="{{ asset('assets/images/white-logo.png') }}" alt="logo">
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle active">
-                                Home
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a href="index.html" class="nav-link active ">Home One</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="index-2.html" class="nav-link">Home Two</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="index-3.html" class="nav-link">Home Three</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="about-us.html" class="nav-link">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">
-                                        Team
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="team-style-one.html" class="nav-link">Team Style One</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="team-style-two.html" class="nav-link">Team Style Two</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="team-style-three.html" class="nav-link">Team Style Three</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">
-                                        Works
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="works.html" class="nav-link">Works</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="works-details.html" class="nav-link">Works Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">
-                                        Video
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="video.html" class="nav-link">Video</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="video-details.html" class="nav-link">Video Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pricing.html" class="nav-link">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="testimonials.html" class="nav-link">Testimonials</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="faq.html" class="nav-link">FAQ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">
-                                        Users
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="login.html" class="nav-link">Login</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="register.html" class="nav-link">Register</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="recover-password.html" class="nav-link">Recover Password</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="terms-conditions.html" class="nav-link">Terms And Conditions</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="coming-soon.html" class="nav-link">Coming Soon</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="404.html" class="nav-link">404 Page</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle">
-                                Blog
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a href="blog-grid.html" class="nav-link">Blog Grid</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog-details.html" class="nav-link">Blog Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact-us.html" class="nav-link">Contact Us</a>
-                        </li>
+                        <x-nav-link label="Home" routeName="pages.welcome" />
+                        <x-dropdown-menu label="About us">
+                            <x-nav-link label="About NAEC" routeName="pages.welcome" />
+                            <x-nav-link label="Core team" routeName="pages.welcome" />
+                            <x-nav-link label="Our actors" routeName="pages.welcome" />
+                        </x-dropdown-menu>
+                        <x-nav-link label="Services" routeName="pages.services" />
+                        <x-dropdown-menu label="Multimedia">
+                            <x-nav-link label="Blog" routeName="pages.blog" />
+                            <x-nav-link label="Events" routeName="pages.events" />
+                        </x-dropdown-menu>
+                        <x-nav-link label="Blog" routeName="pages.blog" />
+                        <x-nav-link label="Contact us" routeName="pages.contact" />
                     </ul>
                     <div class="others-options">
                         <div class="option-item">
@@ -228,3 +117,6 @@
         </div>
     </div>
 </div>
+
+<x-search-modal />
+<x-sidebar-modal />

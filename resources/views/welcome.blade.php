@@ -8,13 +8,13 @@
                         <div class="about-img mb-30 wow fadeInUp2  animated" data-wow-delay=".1s"
                             style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp2;">
                             <div class="about-img__thumb">
-                                <img src="assets/img/about/02.jpg" alt="">
+                                <img src="{{ asset('assets/img/about/02.jpg') }}" alt="">
                             </div>
                             <div class="about-img__style-text">
-                                <img src="assets/img/about/02.png" alt="">
+                                <img src="{{ asset('assets/img/about/02.png') }}" alt="">
                             </div>
                             <div class="about-img__style-dot d-none d-lg-inline-block">
-                                <img src="assets/img/shape/03.png" alt="">
+                                <img src="{{ asset('assets/img/shape/03.png') }}" alt="">
                             </div>
                         </div>
                     </div>

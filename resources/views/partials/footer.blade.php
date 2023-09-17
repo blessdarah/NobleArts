@@ -148,8 +148,7 @@
 
 <div class="copy-right-area">
     <div class="container">
-        <p>© <span>Vidmo</span> is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBoostrap</a>
-        </p>
+        <p>© <span>NAEC</span> {{ now()->format('Y') }}</p>
     </div>
 </div>
 
