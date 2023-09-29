@@ -28,7 +28,8 @@
             <div class="mobile-responsive-menu">
                 <div class="logo">
                     <a href="{{ route('pages.welcome') }}">
-                        <img src="{{ asset('assets/images/white-logo.png') }}" alt="logo">
+                        {{-- <img src="{{ asset('assets/images/white-logo.png') }}" alt="logo"> --}}
+                        <h1 class="text-white">NAEC</h1>
                     </a>
                 </div>
             </div>
@@ -37,23 +38,39 @@
     <div class="desktop-nav">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html">
-                    <img src="{{ asset('assets/images/white-logo.png') }}" alt="logo">
+                <a class="navbar-brand" href="{{ route('pages.welcome') }}">
+                    {{-- <img src="{{ asset('assets/images/white-logo.png') }}" alt="logo"> --}}
+                    <h1 class="text-white">NAEC</h1>
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <x-nav-link label="Home" routeName="pages.welcome" />
+                        <x-dropdown-menu label="Services">
+                            <x-dropdown-menu label="Professional services">
+                                <x-nav-link label="Video Editing" routeName="pages.blog" />
+                                <x-nav-link label="Event hosting" routeName="pages.events" />
+                                <x-nav-link label="Event planning" routeName="pages.events" />
+                                <x-nav-link label="Video production" routeName="pages.events" />
+                            </x-dropdown-menu>
+                            <x-dropdown-menu label="Other services">
+                                <x-nav-link label="Training" routeName="pages.blog" />
+                                <x-nav-link label="Outreach" routeName="pages.events" />
+                            </x-dropdown-menu>
+                        </x-dropdown-menu>
+                        <x-dropdown-menu label="News & Updates">
+                            <x-nav-link label="Blog" routeName="pages.blog" />
+                            <x-nav-link label="Events" routeName="pages.events" />
+                        </x-dropdown-menu>
+                        <x-dropdown-menu label="Our works">
+                            <x-nav-link label="Trailers" routeName="pages.blog" />
+                            <x-nav-link label="Short films" routeName="pages.blog" />
+                            <x-nav-link label="Theatre arts" routeName="pages.events" />
+                        </x-dropdown-menu>
                         <x-dropdown-menu label="About us">
                             <x-nav-link label="About NAEC" routeName="pages.welcome" />
                             <x-nav-link label="Core team" routeName="pages.welcome" />
                             <x-nav-link label="Our actors" routeName="pages.welcome" />
                         </x-dropdown-menu>
-                        <x-nav-link label="Services" routeName="pages.services" />
-                        <x-dropdown-menu label="Multimedia">
-                            <x-nav-link label="Blog" routeName="pages.blog" />
-                            <x-nav-link label="Events" routeName="pages.events" />
-                        </x-dropdown-menu>
-                        <x-nav-link label="Blog" routeName="pages.blog" />
                         <x-nav-link label="Contact us" routeName="pages.contact" />
                     </ul>
                     <div class="others-options">

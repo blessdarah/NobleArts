@@ -4,7 +4,10 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="single-footer-widget logo-area">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/white-logo.png" alt="Image"></a>
+                        <a href="{{ route('pages.welcome') }}">
+                            {{-- <img src="assets/images/white-logo.png" alt="Image"> --}}
+                            <h1 class="text-white">NAEC</h1>
+                        </a>
                     </div>
                     <p>On the other hand, we denounce whteous indignation and dislike men wh beguiled and
                         demoralized er hand, we denounce whteous indignation and dislike </p>

@@ -13,6 +13,10 @@ class Service extends Model
 
     protected $fillable = ["name", "image", "slug", "summary", "description", "category_id"];
 
+    protected $casts = [
+        'created_at' => 'date'
+    ];
+
     public function imageUrl(): string
     {
         return '/storage/' . $this->image;

@@ -7,7 +7,7 @@
                         <div class="col-lg-7">
                             <div class="banner-left-content">
                                 <span>Best Fils Studio </span>
-                                <h1>Standing Studio For Films Making</h1>
+                                <h1>Film, Acting, Theatre, Name it!</h1>
                                 <p>Their duty through weakness of will, which is the same as saying through
                                     shrinking from toil and pain. These cases are perfectly simple and easy to
                                     distinguish weakness of will,</p>
