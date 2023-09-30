@@ -54,7 +54,7 @@ class PagesController extends Controller
     public function showService($id, $slug): View
     {
         $service = Service::findOrFail($id);
-        $otherServices = Service::inRandomOrder()->take(4)->get();
+        $otherServices = Service::whereNot('id', $id)->inRandomOrder()->get();
         return view('show-service')->with([
             'service' => $service,
             'otherServices' => $otherServices,
@@ -100,7 +100,7 @@ class PagesController extends Controller
      */
     public function events(): View
     {
-        return view('events')->with([
+        return view('events.index')->with([
             "events" => Event::latest()->get()
         ]);
     }

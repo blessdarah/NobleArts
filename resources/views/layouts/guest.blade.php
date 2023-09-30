@@ -11,6 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     @include('partials.header-scripts')
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-new-gr-c-s-check-loaded="8.907.0"

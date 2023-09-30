@@ -13,53 +13,14 @@
                                 </ul>
                             </div>
                             <div class="img">
-                                <img src="{{ $service->image }}" alt="Image">
+                                <img src="{{ asset($service->image) }}" alt="Image">
                             </div>
                             {!! $service->description !!}
                         </div>
                         <div class="quote">
                             <p>{{ $service->summary }}</p>
                             <div class="icon">
-                                <img src="assets/images/blog/quote-icon.png" alt="Icon">
-                            </div>
-                        </div>
-                        <div class="tag-and-share">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tags">
-                                        <ul>
-                                            <li>
-                                                <span>Tags:</span>
-                                            </li>
-                                            <li><a href="#">Director</a></li>
-                                            <li><a href="#">Film Maker</a></li>
-                                            <li><a href="#">Film Studio</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="share">
-                                        <ul>
-                                            <li><span>Share:</span></li>
-                                            <li>
-                                                <a href="https://www.facebook.com/" target="_blank"><i
-                                                        class="fa-brands fa-facebook-f"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.twitter.com/" target="_blank"><i
-                                                        class="fa-brands fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
-                                                        class="fa-brands fa-linkedin-in"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
-                                                        class="fa-brands fa-instagram"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <img src="{{ asset('assets/images/blog/quote-icon.png') }}" alt="Icon">
                             </div>
                         </div>
                     </div>
@@ -67,8 +28,53 @@
 
                 {{-- Right section --}}
                 <div class="col-xl-4 col-lg-4 col-md-12">
+                    <div class="card mt-5">
+                        <div class="card-header">Want this service?</div>
+                        <div class="card-body">
+                            <p class="card-text">Contact us today</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+
+    {{-- other services --}}
+    <div class="trailer-area-style2 bg-color ptb-100">
+        <div class="container">
+            <div class="section-title white-title">
+                <span>Similar services</span>
+                <h2>Here are other services to have a look </h2>
+            </div>
+            <div class="trailer-slider2 owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                        style="transform: translate3d(-3948px, 0px, 0px); transition: all 0.8s ease 0s; width: 8883px;">
+                        @foreach ($otherServices as $otherService)
+                            <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
+                                <div class="single-trailer-box">
+                                    <div class="trailer-img">
+                                        <img src="{{ asset($otherService->image) }}" alt="Image">
+                                    </div>
+                                    <div class="content">
+                                        <h3>{{ $otherService->name }}</h3>
+                                        <span>{{ $otherService->category->name }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <button type="button" role="presentation" class="owl-prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button type="button" role="presentation" class="owl-next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </x-guest-layout>
