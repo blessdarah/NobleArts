@@ -270,21 +270,902 @@
                     <div class="about-content pl-15">
                         <div class="about-title">
                             <span>About Us</span>
-                            <h2>Our Movie Industry Is Popular All Over The World</h2>
+                            <h2>We are good at what we do</h2>
                         </div>
                         <div class="experience">
-                            <span>25</span>
+                            <span>{{ now()->format('Y') - 2013 }}</span>
                             <p>Years Of Experience In Flim &amp; Movie Studio</p>
                         </div>
                         <div class="content">
-                            <p>But I must explain to you how all this mistaken idea of denouncing aitems pleash4ure
-                                apraising pain was born and I will give you a complete acexthe actte chings of the great
-                                explorer of the truth, the master-builder</p>
-                            <p>Of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is
-                                pleasure, but because those who do not know how to pursue</p>
+                            <p>Founded in 2013, Noble Arts Entertainment is a youth-led organization based in Bamenda,
+                                with a Branch in Yaoundé Cameroon. Noble Arts Entertainment uses the power of film to
+                                transform and develop youths especially returnees of illegal migration and those
+                                currently affected by the ongoing Anglophone crisis in the English-speaking regions of
+                                Cameroon. </p>
                         </div>
-                        <a href="about-us.html" class="default-btn btn">Read More <i
+                        <a href="{{ route('pages.about') }}" class="default-btn btn">Read More <i
                                 class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trailer-area bg-1 pt-100 pb-70 jarallax" data-jarallax="{&quot;speed&quot;: 0.3}"
+        data-jarallax-original-styles="null"
+        style="background-image: none; background-attachment: scroll; background-size: auto;">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="section-title style2 white-title">
+                    <span>Our Movie Trailer</span>
+                    <h2>Upcoming Movies</h2>
+                </div>
+            </div>
+            <div class="trailer-slider owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                        style="transition: all 0.8s ease 0s; width: 5756px; transform: translate3d(-1106px, 0px, 0px);">
+                        <div class="owl-item cloned" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-3.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Hueco Mundo</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-4.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Mostro Atom</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-5.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Hueco Mundo</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned active" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-6.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Mostro Atom</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active center" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-2.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Mostro Atom</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-3.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Hueco Mundo</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-4.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Mostro Atom</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-5.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Hueco Mundo</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-6.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Mostro Atom</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-2.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Mostro Atom</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-3.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Hueco Mundo</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-4.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Mostro Atom</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 422.75px; margin-right: 20px;">
+                            <div class="single-trailer-card">
+                                <div class="trailer-img">
+                                    <img src="assets/images/trailer/trailer-img-5.jpg" alt="Image">
+                                    <div class="play-btn">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="trailer-content">
+                                    <h3>Hueco Mundo</h3>
+                                    <span>Official Trailer (HD)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i
+                            class="fa-solid fa-angle-left"></i></button><button type="button" role="presentation"
+                        class="owl-next"><i class="fa-solid fa-angle-right"></i></button></div>
+                <div class="owl-dots disabled"></div>
+            </div>
+            <div class="counter-area pt-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <div class="single-counter-card">
+                                <h1>
+                                    <span class="odometer odometer-auto-theme" data-count="4356">
+                                        <div class="odometer-inside"><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">4</span></span></span></span></span><span
+                                                class="odometer-formatting-mark">,</span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">3</span></span></span></span></span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">5</span></span></span></span></span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">6</span></span></span></span></span>
+                                        </div>
+                                    </span>
+                                </h1>
+                                <p>Satisfied Peoples</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <div class="single-counter-card">
+                                <h1>
+                                    <span class="odometer odometer-auto-theme" data-count="7934">
+                                        <div class="odometer-inside"><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">7</span></span></span></span></span><span
+                                                class="odometer-formatting-mark">,</span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">9</span></span></span></span></span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">3</span></span></span></span></span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">4</span></span></span></span></span>
+                                        </div>
+                                    </span>
+                                </h1>
+                                <p>Project Complate</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <div class="single-counter-card">
+                                <h1>
+                                    <span class="odometer odometer-auto-theme" data-count="1120">
+                                        <div class="odometer-inside"><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">1</span></span></span></span></span><span
+                                                class="odometer-formatting-mark">,</span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">1</span></span></span></span></span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">2</span></span></span></span></span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">0</span></span></span></span></span>
+                                        </div>
+                                    </span>
+                                </h1>
+                                <p>Win Award</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                            <div class="single-counter-card">
+                                <h1>
+                                    <span class="odometer odometer-auto-theme" data-count="3425">
+                                        <div class="odometer-inside"><span class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">3</span></span></span></span></span><span
+                                                class="odometer-formatting-mark">,</span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">4</span></span></span></span></span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">2</span></span></span></span></span><span
+                                                class="odometer-digit"><span
+                                                    class="odometer-digit-spacer">8</span><span
+                                                    class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                            class="odometer-ribbon-inner"><span
+                                                                class="odometer-value">5</span></span></span></span></span>
+                                        </div>
+                                    </span>
+                                </h1>
+                                <p>Films Trailrs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -100;"
+            id="jarallax-container-7">
+            <div
+                style="background-position: 50% 50%; background-size: 100%; background-repeat: no-repeat; background-image: url(&quot;file:///Users/user/websites/Vidmo/templates.hibootstrap.com/vidmo/default/assets/images/trailer/trailer-img-1.jpg&quot;); position: absolute; top: 0px; left: 0px; width: 2743.86px; height: 1477.69px; overflow: hidden; pointer-events: none; margin-left: -496.432px; margin-top: -448.843px; visibility: visible; transform: translateY(10.6892px) translateZ(0px);">
+            </div>
+        </div>
+    </div>
+
+    <div class="team-area ptb-100">
+        <div class="container">
+            <div class="section-title">
+                <span>Flims &amp; Movie Maker</span>
+                <h2>Meet The Directors</h2>
+            </div>
+            <div class="team-slider owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                        style="transform: translate3d(-1316px, 0px, 0px); transition: all 0.8s ease 0s; width: 4277px;">
+                        <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-2.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Juan Soponatime</h3>
+                                    <span>Sub Driector</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-3.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Carrie R. Pigeon</h3>
+                                    <span>Actor</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-4.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Aaron Spacemuseum</h3>
+                                    <span>Manager</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-1.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Frank Senbeans</h3>
+                                    <span>Driector</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-1.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Frank Senbeans</h3>
+                                    <span>Driector</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-2.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Juan Soponatime</h3>
+                                    <span>Sub Driector</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-3.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Carrie R. Pigeon</h3>
+                                    <span>Actor</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-4.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Aaron Spacemuseum</h3>
+                                    <span>Manager</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-1.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Frank Senbeans</h3>
+                                    <span>Driector</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-1.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Frank Senbeans</h3>
+                                    <span>Driector</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-2.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Juan Soponatime</h3>
+                                    <span>Sub Driector</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-3.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Carrie R. Pigeon</h3>
+                                    <span>Actor</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
+                            <div class="single-team-card">
+                                <div class="team-img">
+                                    <img src="assets/images/team/team-img-4.jpg" alt="Image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>Aaron Spacemuseum</h3>
+                                    <span>Manager</span>
+                                    <div class="social-content">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/" target="_blank"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.twitter.com/" target="_blank"><i
+                                                        class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i
+                            class="fa-solid fa-angle-left"></i></button><button type="button" role="presentation"
+                        class="owl-next"><i class="fa-solid fa-angle-right"></i></button></div>
+                <div class="owl-dots disabled"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-area pt-100 pb-70">
+        <div class="container">
+            <div class="section-title">
+                <span>Latest News</span>
+                <h2>Articles Updated Daily</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
+                    data-aos-delay="200">
+                    <div class="single-blog-card">
+                        <div class="blog-img">
+                            <a href="blog-details.html"><img src="assets/images/blog/blog-img-1.jpg"
+                                    alt="Image"></a>
+                            <div class="tag">
+                                <a href="#">Film studio</a>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="info">
+                                <ul>
+                                    <li>June 24, 2022</li>
+                                    <li>By<a href="blog-grid.html">Admin</a></li>
+                                </ul>
+                            </div>
+                            <h2><a href="blog-details.html">How To Edit A Film Score To Best Movie Serve Your Story</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
+                    data-aos-delay="400">
+                    <div class="single-blog-card">
+                        <div class="blog-img">
+                            <a href="blog-details.html"><img src="assets/images/blog/blog-img-2.jpg"
+                                    alt="Image"></a>
+                            <div class="tag">
+                                <a href="#">Film Maker</a>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="info">
+                                <ul>
+                                    <li>June 25, 2022</li>
+                                    <li>By<a href="blog-grid.html">Admin</a></li>
+                                </ul>
+                            </div>
+                            <h2><a href="blog-details.html">Teaming Up With Josh Marston Producer For Effects</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
+                    data-aos-delay="600">
+                    <div class="single-blog-card">
+                        <div class="blog-img">
+                            <a href="blog-details.html"><img src="assets/images/blog/blog-img-3.jpg"
+                                    alt="Image"></a>
+                            <div class="tag">
+                                <a href="#">Lifestyle</a>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="info">
+                                <ul>
+                                    <li>June 26, 2022</li>
+                                    <li>By<a href="blog-grid.html">Admin</a></li>
+                                </ul>
+                            </div>
+                            <h2><a href="blog-details.html">Interview In London With Movie Slackers Producer
+                                    Sebastian</a></h2>
+                        </div>
                     </div>
                 </div>
             </div>
