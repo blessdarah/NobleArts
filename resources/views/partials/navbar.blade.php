@@ -67,9 +67,11 @@
                             <x-nav-link label="Theatre arts" routeName="pages.events" />
                         </x-dropdown-menu>
                         <x-dropdown-menu label="About us">
-                            <x-nav-link label="About NAEC" routeName="pages.welcome" />
-                            <x-nav-link label="Core team" routeName="pages.welcome" />
-                            <x-nav-link label="Our actors" routeName="pages.welcome" />
+                            <x-nav-link label="About NAEC" routeName="pages.about.index" />
+                            <x-nav-link label="Core team"
+                                routeName="{{ route('pages.about.team', ['type' => 'core']) }}" isVerbose />
+                            <x-nav-link label="Our actors"
+                                routeName="{{ route('pages.about.team', ['type' => 'actor']) }}" isVerbose />
                         </x-dropdown-menu>
                         <x-nav-link label="Contact us" routeName="pages.contact" />
                     </ul>

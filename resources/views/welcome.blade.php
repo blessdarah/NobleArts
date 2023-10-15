@@ -283,7 +283,7 @@
                                 currently affected by the ongoing Anglophone crisis in the English-speaking regions of
                                 Cameroon. </p>
                         </div>
-                        <a href="{{ route('pages.about') }}" class="default-btn btn">Read More <i
+                        <a href="{{ route('pages.about.index') }}" class="default-btn btn">Read More <i
                                 class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>

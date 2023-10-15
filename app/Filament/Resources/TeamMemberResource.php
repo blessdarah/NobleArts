@@ -7,6 +7,7 @@ use App\Models\TeamMember;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
@@ -34,13 +35,15 @@ class TeamMemberResource extends Resource
                     ->avatar()
                     ->columnSpanFull(),
                 TextInput::make("name")->required(),
-                TextInput::make("nickname"),
+                Select::make("type")->options(TeamMember::OPTIONS),
                 TextInput::make("position"),
-                TextInput::make("address"),
-                TextInput::make("email")->email(),
+                TextInput::make("website")->url(),
+                TextInput::make("email")->email()->required(),
                 TextInput::make("telephone")->tel(),
-                TextInput::make("gender"),
-                DatePicker::make("dob")->label("Date of birth"),
+                TextInput::make("facebook")->url(),
+                TextInput::make("twitter")->url(),
+                TextInput::make("instagram")->url(),
+                TextInput::make("linkedin")->url(),
                 RichEditor::make("about")->label("About info")->columnSpanFull()
             ]);
     }
@@ -50,13 +53,9 @@ class TeamMemberResource extends Resource
         return $table
             ->columns([
                 TextColumn::make("name")->sortable()->searchable(),
-                TextColumn::make("nickname")->sortable()->searchable(),
                 TextColumn::make("position")->sortable()->searchable(),
-                TextColumn::make("address")->sortable()->searchable(),
                 TextColumn::make("email")->sortable()->searchable(),
                 TextColumn::make("telephone")->sortable()->searchable(),
-                TextColumn::make("gender")->sortable(),
-                TextColumn::make("dob")->label("Date of birth")->sortable(),
             ])
             ->filters([
                 //

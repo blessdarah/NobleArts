@@ -15,16 +15,19 @@ return new class () extends Migration {
         Schema::create('team_members', function (Blueprint $table) {
             $table->id();
             $table->string("name");
+            $table->string("type");
             $table->string("image")->nullable();
-            $table->string("nickname")->nullable();
             $table->string("position")->nullable();
-            $table->string("address")->nullable();
+            $table->string("website")->nullable();
             $table->string("email")->nullable();
             $table->string("telephone")->nullable();
-            $table->string("gender");
-            $table->date("dob")->nullable();
             $table->mediumText("about")->nullable();
+            $table->string("facebook")->nullable();
+            $table->string("twitter")->nullable();
+            $table->string("instagram")->nullable();
+            $table->string("linkedin")->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -18,14 +18,16 @@ class TeamMemberFactory extends Factory
     {
         return [
             "name" => fake()->name,
-            "nickname" => fake()->firstName,
+            "type" => fake()->randomElement(["actor", "member"]),
             "position" => fake()->jobTitle,
-            "address" => fake()->address,
+            "website" => fake()->url,
             "email" => fake()->safeEmail,
             "telephone" => fake()->phoneNumber,
-            "gender" => fake()->randomElement(["male", "female"]),
-            "dob" => fake()->date,
-            "about" => fake()->paragraphs(2, true)
+            "about" => fake()->paragraphs(2, true),
+            "facebook" => fake()->url,
+            "twitter" => fake()->url,
+            "linkedin" => fake()->url,
+            "instagram" => fake()->url
         ];
     }
 }
