@@ -207,48 +207,68 @@
     <div class="features-area bg-f5f5f5 pt-100 pb-70">
         <div class="container">
             <div class="section-title">
-                <span>Our Features</span>
-                <h2>We're not theatre | arts</h2>
+                <span>What defines us</span>
+                <h2>Our core values</h2>
             </div>
-            <div class="row">
+            <div class="row core-values">
                 <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
                     data-aos-delay="200">
                     <div class="single-features-card">
                         <div class="features-img">
-                            <img src="assets/images/features/features-img-1.png" alt="Image">
+                            <img src="{{asset('images/values/creativity.png')}}" alt="Image">
                         </div>
-                        <h3>Content Production</h3>
-                        <p>Contrary to popular belieors not simply rand It hace of lassica literature from making</p>
+                        <h3>Creativity</h3>
+                        <p>We believe in the power of creativity to inspire, engage, and transform. </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
                     data-aos-delay="400">
                     <div class="single-features-card">
                         <div class="features-img">
-                            <img src="assets/images/features/features-img-2.png" alt="Image">
+                            <img src="{{asset('images/values/collaboration.png')}}" alt="Image">
                         </div>
-                        <h3>Film Production</h3>
-                        <p>Contrary to popular belieors not simply rand It hace of lassica literature from making</p>
+                        <h3>Collaboration</h3>
+                        <p>We believe in working together with our partners and communities to co-create solutions that address local needs and challenges.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
                     data-aos-delay="600">
                     <div class="single-features-card">
                         <div class="features-img">
-                            <img src="assets/images/features/features-img-3.png" alt="Image">
+                            <img src="{{asset('images/values/diversity.png')}}" alt="Image">
                         </div>
-                        <h3>Creative Direction</h3>
-                        <p>Contrary to popular belieors not simply rand It hace of lassica literature from making</p>
+                        <h3>Diversity and Inclusion:</h3>
+                        <p>We believe in creating a safe and inclusive space for all young people, regardless of their background or identity. </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
                     data-aos-delay="800">
                     <div class="single-features-card">
                         <div class="features-img">
-                            <img src="assets/images/features/features-img-4.png" alt="Image">
+                            <img src="{{asset('images/values/empowerment.png')}}" alt="Image">
                         </div>
-                        <h3>Video Solution</h3>
-                        <p>Contrary to popular belieors not simply rand It hace of lassica literature from making</p>
+                        <h3>Empowerment</h3>
+                        <p>We believe in empowering young people to take ownership of their ideas and projects, and to be leaders in their communities. </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
+                    data-aos-delay="800">
+                    <div class="single-features-card">
+                        <div class="features-img">
+                            <img src="{{asset('images/values/sustainability.png')}}" alt="Image">
+                        </div>
+                        <h3>Sustainability</h3>
+                        <p>We believe in using resources responsibly and ensuring that our programs have a positive impact on the environment and the community.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
+                    data-aos-delay="800">
+                    <div class="single-features-card">
+                        <div class="features-img">
+                            <img src="{{asset('images/values/innovation.png')}}" alt="Image">
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We believe in the creative and innovative potentials of young people to finding simple solutions to very complex problems and to power the change needed in their communities. </p>
                     </div>
                 </div>
             </div>
@@ -273,8 +293,8 @@
                             <h2>We are good at what we do</h2>
                         </div>
                         <div class="experience">
-                            <span>{{ now()->format('Y') - 2013 }}</span>
-                            <p>Years Of Experience In Flim &amp; Movie Studio</p>
+                            <span>+{{ now()->format('Y') - 2013 }}</span>
+                            <p>Years of experience in theatre, and film production.</p>
                         </div>
                         <div class="content">
                             <p>Founded in 2013, Noble Arts Entertainment is a youth-led organization based in Bamenda,

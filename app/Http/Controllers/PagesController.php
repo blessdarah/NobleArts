@@ -65,9 +65,9 @@ class PagesController extends Controller
      */
     public function about(): View
     {
-        return view('about')->with([
+        return view('about.index')->with([
             "members" => TeamMember::all(),
-            "sections" => AboutSection::all()
+            "sections" => AboutSection::latest()->get()
         ]);
     }
     /**

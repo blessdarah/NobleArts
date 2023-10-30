@@ -21,6 +21,7 @@ class AboutSectionResource extends Resource
     protected static ?string $model = AboutSection::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationGroup = 'cms';
 
     public static function form(Form $form): Form
     {

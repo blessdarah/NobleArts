@@ -22,7 +22,7 @@
                         <div class="col-lg-5">
                             <div class="video-play-btn">
                                 <div class="play-btn">
-                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=6WQCJx_vEX4">
+                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=_NQrE6yrVo0">
                                         <i class="fa-solid fa-play"></i>
                                     </a>
                                 </div>

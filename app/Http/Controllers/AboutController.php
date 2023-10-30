@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AboutSection;
 use App\Models\TeamMember;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
@@ -10,7 +11,9 @@ class AboutController extends Controller
 {
     public function index(): View
     {
-        return view('about.index');
+        return view('about.index')->with([
+            'sections' => AboutSection::all()
+        ]);
     }
 
     public function team(Request $request): View

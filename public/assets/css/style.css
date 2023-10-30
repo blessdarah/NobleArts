@@ -6938,3 +6938,7 @@ textarea {
     right: 3%;
     top: 93%;
 }
+
+.core-values .features-img img {
+    height: 10rem;
+}
