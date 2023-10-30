@@ -17,7 +17,7 @@
                 @foreach ($sections as $section)
                     <h3>{{ $section->name }}</h3>
                     <div class="video-img">
-                        <img src="{{ asset($section->image) }}" alt="Image">
+                        <img src="{{ asset('storage/' . $section->image) }}" alt="Image">
                     </div>
                     {!! $section->body !!}
                 @endforeach
