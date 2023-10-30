@@ -17,10 +17,8 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         if(App::environment('production')) {
-            User::create([
-                'email' => 'super-admin@naec.cm',
-                'password' => Hash::make('testUser'),
-                'name' => 'Super Admin'
+            $this->call([
+                UserSeeder::class
             ]);
         } else {
 
