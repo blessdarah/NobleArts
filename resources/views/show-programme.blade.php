@@ -15,7 +15,7 @@
                             <div class="img">
                                 <img src="{{ asset('/storage/' . $programme->image) }}" alt="Image">
                             </div>
-                            {!! $programme->description !!}
+                            {!! $programme->detail !!}
                         </div>
                         <div class="quote">
                             <p>{{ $programme->summary }}</p>
