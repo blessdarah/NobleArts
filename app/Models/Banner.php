@@ -10,8 +10,4 @@ class Banner extends Model
     use HasFactory;
 
     protected $fillable = ['title', 'content', 'button_text', 'image', 'is_active'];
-
-    public static function where(string $string, bool $bool)
-    {
-    }
 }
