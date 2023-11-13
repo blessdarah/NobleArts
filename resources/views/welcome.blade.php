@@ -12,186 +12,22 @@
                 <div class="owl-stage-outer">
                     <div class="owl-stage"
                         style="transform: translate3d(-2193px, 0px, 0px); transition: all 0.8s ease 0s; width: 5265px;">
-                        <div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-3.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>TV Film Production</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>TV Film Production</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-4.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>Green Screen Studios</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>Green Screen Studios</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
+                        @foreach($services as $service)
+                            <div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;">
+                                <div class="single-service-box">
+                                    <div class="services-img">
+                                        <img src="{{asset('/storage/' . $service->image)}}" alt="Image">
+                                    </div>
+                                    <div class="services-content1">
+                                        <h3>{{$service->name}}</h3>
+                                    </div>
+                                    <div class="services-content2">
+                                        <h3>{{$service->name}}</h3>
+                                        <p>{{$service->summary}}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-5.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>Video Editing / Effects</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>Video Editing / Effects</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-3.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>TV Film Production</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>TV Film Production</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-4.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>Green Screen Studios</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>Green Screen Studios</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item active" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-5.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>Video Editing / Effects</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>Video Editing / Effects</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item active" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-3.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>TV Film Production</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>TV Film Production</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item active" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-4.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>Green Screen Studios</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>Green Screen Studios</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-5.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>Video Editing / Effects</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>Video Editing / Effects</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-3.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>TV Film Production</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>TV Film Production</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-4.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>Green Screen Studios</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>Green Screen Studios</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;">
-                            <div class="single-service-box">
-                                <div class="services-img">
-                                    <img src="assets/images/services/services-img-5.jpg" alt="Image">
-                                </div>
-                                <div class="services-content1">
-                                    <h3>Video Editing / Effects</h3>
-                                </div>
-                                <div class="services-content2">
-                                    <h3>Video Editing / Effects</h3>
-                                    <p>When our power of choice is untrlle when nothing prevents our being what we
-                                        like best, every pleavery pain</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
                 <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i
