@@ -9,25 +9,32 @@
                             <h1 class="text-white">NAEC</h1>
                         </a>
                     </div>
-                    <p>On the other hand, we denounce whteous indignation and dislike men wh beguiled and
-                        demoralized er hand, we denounce whteous indignation and dislike </p>
+                    <p>{{ setting('common.about') }}</p>
                     <div class="social-content">
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank"><i
+                                <a href="{{ setting('social.facebook') }}" target="_blank"><i
                                         class="fa-brands fa-facebook-f"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.twitter.com/" target="_blank"><i
+                                <a href="{{ setting('social.twitter') }}" target="_blank"><i
                                         class="fa-brands fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                                <a href="{{ setting('social.linkedin') }}" target="_blank"><i
                                         class="fa-brands fa-linkedin-in"></i></a>
                             </li>
                             <li>
-                                <a href="https://instagram.com/?lang=en" target="_blank"><i
+                                <a href="{{ setting('social.instagram') }}" target="_blank"><i
                                         class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="{{ setting('social.youtube') }}" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="{{ setting('social.tiktok') }}" target="_blank"><i
+                                        class="fa-brands fa-tiktok"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -39,23 +46,23 @@
                     <ul>
                         <li>
                             <i class="fa-solid fa-arrow-right"></i>
-                            <a href="about-us.html">About Us</a>
+                            <a href="#">About Us</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-arrow-right"></i>
-                            <a href="works.html">Works</a>
+                            <a href="{{ route('pages.services') }}">Works</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-arrow-right"></i>
-                            <a href="video.html">Videos</a>
+                            <a href="#">Videos</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-arrow-right"></i>
-                            <a href="blog-grid.html">Blog</a>
+                            <a href="{{ route('pages.blog') }}">Blog</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-arrow-right"></i>
-                            <a href="contact-us.html">Contact</a>
+                            <a href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -122,20 +129,19 @@
                         <li>
                             <i class="fa-solid fa-phone"></i>
                             <span>Phone</span>
-                            <a href="tel:0087648484">(008) 764 8484</a>
+                            <a href="tel:{{ setting('common.telephone') }}">{{ setting('common.telephone') }}</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-envelope"></i>
                             <span>Email</span>
-                            <a
-                                href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#5c343930302a35383133331c3b313d3530723f3331"><span
-                                    class="__cf_email__"
-                                    data-cfemail="0a626f66667c636e6765654a6d676b636624696567">[email&#160;protected]</span></a>
+                            <a href="mailto:{{ setting('common.email') }}">
+                                <span>{{ setting('common.email') }}</span>
+                            </a>
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
                             <span>Address</span>
-                            <p>2750 Quadra Street Canada</p>
+                            <p>{{ setting('common.address') }}</p>
                         </li>
                     </ul>
                 </div>
