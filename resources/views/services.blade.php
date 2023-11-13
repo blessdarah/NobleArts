@@ -8,8 +8,7 @@
                         <div class="movie-image pr-15">
                             <img src="{{ asset('/storage/' . $service->image) }}" alt="Service cover">
                         </div>
-                    </div>
-                    <div class="col-lg-6 @if ($loop->index % 2 == 1) order-1 @endif">
+                        </divj <div class="col-lg-6 @if ($loop->index % 2 == 1) order-1 @endif">
                         <div class="movie-content pl-15">
                             <div class="movie-title">
                                 <span>{{ $service->category->name }}</span>

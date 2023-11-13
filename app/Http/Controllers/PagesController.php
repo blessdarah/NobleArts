@@ -7,6 +7,7 @@ use App\Models\AboutSection;
 use App\Models\Banner;
 use App\Models\Event;
 use App\Models\Faq;
+use App\Models\Movie;
 use App\Models\Partner;
 use App\Models\Post;
 use App\Models\Project;
@@ -28,12 +29,13 @@ class PagesController extends Controller
     {
         return view('welcome')->with([
             "services" => Service::all()->take(6),
-            "members" => TeamMember::all()->take(4),
+            "members" => TeamMember::all(),
             "partners" => Partner::all()->take(4),
             "posts" => Post::all()->take(4),
             "events" => Event::all()->take(4),
             "updates" => Update::all()->take(8),
-            "banners" => Banner::where('is_active', true)->get()
+            "banners" => Banner::where('is_active', true)->get(),
+            "movies" => Movie::all()->take(8)
         ]);
     }
 

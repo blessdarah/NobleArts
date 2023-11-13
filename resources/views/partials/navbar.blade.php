@@ -53,9 +53,6 @@
                                 @foreach ($prefessionalServices as $service)
                                     <x-nav-link label="{{ $service->name }}" routeName="pages.services" />
                                 @endforeach
-                                {{-- <x-nav-link label="Event hosting" routeName="pages.services" /> --}}
-                                {{-- <x-nav-link label="Event planning" routeName="pages.services" /> --}}
-                                {{-- <x-nav-link label="Video production" routeName="pages.services" /> --}}
                             </x-dropdown-menu>
                             <x-dropdown-menu label="Other services">
                                 <x-nav-link label="Training" routeName="pages.blog" />
