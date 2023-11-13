@@ -7,15 +7,7 @@
             @else
                 <h3>Our actors</h3>
             @endif
-            <p>Consectetur asperiores odio officiis reprehenderit animi Dignissimos animi recusandae id adipisci
-                dolorem? Nemo rerum laborum dolore amet officiis. Assumenda quidem harum in aut ratione Quasi
-                accusantium vitae fugit tempora eos impedit molestiae non amet voluptatibus! Aliquam saepe maxime
-                officia nemo magnam Pariatur cum blanditiis recusandae est accusantium Earum commodi deserunt et
-                consequuntur molestias! Tempora quos sed similique exercitationem quae Voluptates repellat at et quo
-                nesciunt. Dolores officia deleniti assumenda eaque soluta! Neque voluptatibus accusantium placeat
-                perferendis cumque! Reprehenderit maiores quam accusantium quis non? Officia dolorem nemo aliquid
-                aspernatur ipsa Facere sunt accusantium alias placeat recusandae laboriosam minima. Incidunt doloremque
-                sunt?</p>
+            <p></p>
         </div>
     </div>
 
@@ -24,7 +16,7 @@
             @foreach ($members as $member)
                 <div class="col-md-4 single-team-box mb-5">
                     <div class="team-img">
-                        <img src="{{ asset('assets/images/team/team-img-5.jpg') }}" alt="Image">
+                        <img src="{{ asset('/storage/' . $member->image) }}" alt="Image">
                         <div class="social-content">
                             <ul>
                                 <li>
