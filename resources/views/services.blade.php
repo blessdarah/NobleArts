@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 @if ($loop->index % 2 == 1) order-2 @endif">
                         <div class="movie-image pr-15">
-                            <img src="{{ assset($service->image) }}" alt="Service cover">
+                            <img src="{{ asset('/storage/' . $service->image) }}" alt="Service cover">
                         </div>
                     </div>
                     <div class="col-lg-6 @if ($loop->index % 2 == 1) order-1 @endif">
