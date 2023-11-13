@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="banner-slider owl-carousel owl-theme">
             @foreach ($banners as $banner)
-                <div class="banner-slider-item bg-1 jarallax" style="background-image:url('{{ $banner->image }}')"
+                <div class="banner-slider-item bg-1 jarallax" style="background-image:url('{{ asset($banner->image) }}')"
                     data-jarallax="{&quot;speed&quot;: 0.3}">
                     <div class="banner-content">
                         <div class="row align-items-center">
