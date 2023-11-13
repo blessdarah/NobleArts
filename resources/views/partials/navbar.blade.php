@@ -58,7 +58,8 @@
                             </x-dropdown-menu>
                             <x-dropdown-menu label="Our programmes">
                                 @foreach ($programmes as $programme)
-                                    <x-nav-link label="{{ $programme->name }}" routeName="pages.services" />
+                                    <x-nav-link isVerbose label="{{ $programme->name }}"
+                                        routeName="{{ route('pages.programmes.show', $programme->id) }}" />
                                 @endforeach
                             </x-dropdown-menu>
                         </x-dropdown-menu>

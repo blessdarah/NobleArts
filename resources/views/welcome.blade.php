@@ -121,9 +121,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-img pr-15">
-                        <img src="assets/images/about/about-img-2.jpg" alt="Image">
+                        <img src="{{ asset('images/about-1.jpeg') }}" alt="Image">
                         <div class="small-img">
-                            <img src="assets/images/about/about-img-3.jpg" alt="Image">
+                            <img src="{{ asset('images/about-3.jpeg') }}" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -344,7 +344,7 @@
                 <div class="owl-stage-outer">
                     <div class="owl-stage"
                         style="transform: translate3d(-1316px, 0px, 0px); transition: all 0.8s ease 0s; width: 4277px;">
-                        @foreach ($members as $member)
+                        @foreach ($members->where('type', 'core') as $member)
                             <div class="owl-item cloned" style="width: 309px; margin-right: 20px;">
                                 <div class="single-team-card">
                                     <div class="team-img">

@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\DonateController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Programme;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,11 @@ Route::controller(AboutController::class)->group(function () {
     Route::get('/about/about-us', 'index')->name('pages.about.index');
     Route::get('/about/our-team', 'team')->name('pages.about.team');
 });
+Route::get('/programmes/{id}', function (int $id) {
+    $programme = Programme::find($id)->first();
+    return view('show-programme')->with('programme', $programme);
+})->name('pages.programmes.show');
+
 Route::controller(PagesController::class)->group(function () {
     Route::get('/', 'index')->name('pages.welcome');
     Route::get('/contact', 'contact')->name('pages.contact');
