@@ -1,6 +1,8 @@
 @php
     $prefessionalServices = \App\Models\Service::all();
+    $programmes = \App\Models\Programme::all();
 @endphp
+
 <div id="preloader-section">
     <div id="preloader">
         <div id="ctn-preloader" class="ctn-preloader">
@@ -54,9 +56,10 @@
                                     <x-nav-link label="{{ $service->name }}" routeName="pages.services" />
                                 @endforeach
                             </x-dropdown-menu>
-                            <x-dropdown-menu label="Other services">
-                                <x-nav-link label="Training" routeName="pages.blog" />
-                                <x-nav-link label="Outreach" routeName="pages.events" />
+                            <x-dropdown-menu label="Our programmes">
+                                @foreach ($programmes as $programme)
+                                    <x-nav-link label="{{ $programme->name }}" routeName="pages.services" />
+                                @endforeach
                             </x-dropdown-menu>
                         </x-dropdown-menu>
                         <x-dropdown-menu label="News & Updates">

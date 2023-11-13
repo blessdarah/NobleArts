@@ -43,6 +43,7 @@ class ProgrammeResource extends Resource
                             $set("slug", Str::slug($state));
                         }
                     )->required(),
+                TextInput::make("slug")->disabled(),
                 TextInput::make('description')->required(),
                 TinyEditor::make("detail")->required()->columnSpanFull(),
             ]);
