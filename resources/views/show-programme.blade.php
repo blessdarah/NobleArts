@@ -32,6 +32,34 @@
                         <div class="card-header">Want this service?</div>
                         <div class="card-body">
                             <p class="card-text">Contact us today</p>
+
+                            <ul class="list-group">
+                                <li class="list-group-item text-secondary">
+                                    <a href="{{ setting('social.facebook') }}" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <a href="{{ setting('social.twitter') }}" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <a href="{{ setting('social.linkedin') }}" target="_blank"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <a href="{{ setting('social.instagram') }}" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <a href="{{ setting('social.youtube') }}" target="_blank"><i
+                                            class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <a href="{{ setting('social.tiktok') }}" target="_blank"><i
+                                            class="fa-brands fa-tiktok"></i></a>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>

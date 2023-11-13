@@ -8,32 +8,43 @@
                 </a>
                 <div class="sidebar-content">
                     <h3>About Us</h3>
-                    <p>This is about NAEC.</p>
+                    <p>{{ setting('common.about') }}</p>
                 </div>
                 <div class="sidebar-contact-info">
                     <h3>Contact Information</h3>
                     <ul class="info-list">
-                        <li><i class="fa-solid fa-phone"></i> <a href="tel:9901234567">+990-123-4567</a></li>
-                        <li><i class="fa-regular fa-envelope"></i><a href="mailto:user@gmail.com"><span
-                                    class="__cf_email__">info@naec.com</span></a>
+                        <li><i class="fa-solid fa-phone"></i> <a
+                                href="tel:{{ setting('common.telephone') }}">{{ setting('common.telephone') }}</a></li>
+                        <li><i class="fa-regular fa-envelope"></i><a
+                                href="mailto:{{ setting('common.email') }}"><span>{{ setting('common.email') }}</span></a>
                         </li>
-                        <li><i class="fa-regular fa-location-dot"></i> Vertinery Junction Bamenda</li>
+                        <li><i class="fa-regular fa-location-dot"></i> {{ setting('common.address') }}</li>
                     </ul>
                 </div>
                 <ul class="sidebar-social-list">
                     <li>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="{{ setting('social.facebook') }}" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="{{ setting('social.twitter') }}" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="https://linkedin.com/?lang=en" target="_blank"><i
+                        <a href="{{ setting('social.linkedin') }}" target="_blank"><i
                                 class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                     <li>
-                        <a href="https://instagram.com/?lang=en" target="_blank"><i
+                        <a href="{{ setting('social.instagram') }}" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="{{ setting('social.youtube') }}" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="{{ setting('social.tiktok') }}" target="_blank"><i
+                                class="fa-brands fa-tiktok"></i></a>
                     </li>
                 </ul>
                 @auth
