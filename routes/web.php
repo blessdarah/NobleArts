@@ -23,7 +23,7 @@ Route::controller(AboutController::class)->group(function () {
     Route::get('/about/our-team', 'team')->name('pages.about.team');
 });
 Route::get('/programmes/{id}', function (int $id) {
-    $programme = Programme::find($id)->first();
+    $programme = Programme::find($id);
     return view('show-programme')->with('programme', $programme);
 })->name('pages.programmes.show');
 
