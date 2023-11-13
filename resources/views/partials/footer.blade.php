@@ -74,7 +74,7 @@
                         <div class="col-4">
                             <div class="single-instagram-box">
                                 <img src="assets/images/instagram/instagram-img-1.jpg" alt="Image">
-                                <a href="https://instagram.com/?lang=en" target="_blank">
+                                <a href="{{ setting('instagram.post1') }}" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </div>
@@ -82,7 +82,7 @@
                         <div class="col-4">
                             <div class="single-instagram-box">
                                 <img src="assets/images/instagram/instagram-img-2.jpg" alt="Image">
-                                <a href="https://instagram.com/?lang=en" target="_blank">
+                                <a href="{{ setting('instagram.post2') }}" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </div>
@@ -90,7 +90,7 @@
                         <div class="col-4">
                             <div class="single-instagram-box">
                                 <img src="assets/images/instagram/instagram-img-3.jpg" alt="Image">
-                                <a href="https://instagram.com/?lang=en" target="_blank">
+                                <a href="{{ setting('instagram.post3') }}" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </div>
@@ -98,7 +98,7 @@
                         <div class="col-4">
                             <div class="single-instagram-box">
                                 <img src="assets/images/instagram/instagram-img-4.jpg" alt="Image">
-                                <a href="https://instagram.com/?lang=en" target="_blank">
+                                <a href="{{ setting('instagram.post4') }}n" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </div>
@@ -106,7 +106,7 @@
                         <div class="col-4">
                             <div class="single-instagram-box">
                                 <img src="assets/images/instagram/instagram-img-5.jpg" alt="Image">
-                                <a href="https://instagram.com/?lang=en" target="_blank">
+                                <a href="{{ setting('instagram.post5') }}" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </div>
@@ -114,7 +114,7 @@
                         <div class="col-4">
                             <div class="single-instagram-box">
                                 <img src="assets/images/instagram/instagram-img-6.jpg" alt="Image">
-                                <a href="https://instagram.com/?lang=en" target="_blank">
+                                <a href="{{ setting('instagram.post6') }}" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </div>
