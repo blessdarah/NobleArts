@@ -13,7 +13,7 @@
                                 </ul>
                             </div>
                             <div class="img">
-                                <img src="{{ asset($service->image) }}" alt="Image">
+                                <img src="{{ asset('/storage/' . $service->image) }}" alt="Image">
                             </div>
                             {!! $service->description !!}
                         </div>
